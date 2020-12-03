@@ -6,7 +6,10 @@ const CarInfo = ({ data }: any) => {
   console.log(data);
   return (
     <Container>
-      <p>Marca/Modelo: {data.marca}</p>
+      <p>
+        Marca/Modelo: {data.marca}
+        {data.marca !== data.modelo && `/${data.modelo}`}
+      </p>
       <p>Ano: {data.ano}</p>
       <p>Cor: {data.cor}</p>
       <p>Chassi: {data.chassi}</p>
