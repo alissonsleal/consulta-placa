@@ -8,12 +8,11 @@
 
 # Consulta Placa
 
-Consulte a placa de qualquer veículo no Brasil de forma rápida, fácil e sem propagandas.
-Funciona com placas antigas e também com as do Mercosul.
+Lookup any vehicle plate in Brazil, it's super easy, fast and there's ads. It works with either new or old vehicle plates including with Mercosul plates.
 
-Consulte agora: [Consulta-Placa](https://consulta-placa.vercel.app)
+Lookup now: [Consulta-Placa](https://consulta-placa.vercel.app)
 
-## Imagens
+## Images
 
 <p align="center">
 
@@ -23,7 +22,7 @@ Consulte agora: [Consulta-Placa](https://consulta-placa.vercel.app)
 
 </p>
 
-## Construido com:
+## Built With:
 
 - [x] React
 - [x] Typescript
@@ -32,14 +31,14 @@ Consulte agora: [Consulta-Placa](https://consulta-placa.vercel.app)
 - [x] APICarros.com
 - [x] Deployed to Vercel
 
-## Contribuições
+## Contributions
 
-Sinta-se livre para contribuir para o projeto
+Feel free to contribute to this repo.
 
-## Contato
+## Author Info
 
 - Twitter - [@alissonsleal](https://twitter.com/alissonsleal)
 - Discord - [Alisson#0629](https://discord.com/)
 - StackOverflow - [Alisson Leal](https://stackoverflow.com/users/14122260/alisson-leal)
 
-[Subir ao Topo](#Consulta-Placa)
+[Go to the top](#Consulta-Placa)
