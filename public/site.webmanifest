@@ -1,6 +1,7 @@
 {
-  "name": "",
-  "short_name": "",
+  "name": "Consulta Placa",
+  "short_name": "Consulta Placa",
+  "description": "Consulte a placa de qualquer veículo no Brasil",
   "icons": [
     {
       "src": "/android-chrome-192x192.png",
@@ -13,7 +14,7 @@
       "type": "image/png"
     }
   ],
-  "theme_color": "#ffffff",
-  "background_color": "#ffffff",
+  "theme_color": "#181a1b",
+  "background_color": "#181a1b",
   "display": "standalone"
 }
