@@ -1,4 +1,5 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
+import ReactGA from 'react-ga';
 import { FiSearch } from 'react-icons/fi';
 
 import api from '../../services/api';
@@ -18,14 +19,23 @@ interface CarProps {
 }
 
 const Home: React.FC = () => {
+  useEffect(() => {
+    ReactGA.initialize(`${process.env.REACT_APP_GOOGLE_TRACKING}`);
+    ReactGA.pageview('/');
+  }, []);
+
   const [carPlate, setCarPlate] = useState('');
   const [carInfo, setCarInfo] = useState<CarProps>();
 
   const handleSubmit = async () => {
     try {
       const response = await api.get(`${carPlate}/json`);
-      console.log(response.data);
       setCarInfo(response.data);
+
+      ReactGA.event({
+        category: 'Button',
+        action: 'User searched a license plate',
+      });
     } catch (err) {
       console.warn(err);
     }
@@ -34,6 +44,7 @@ const Home: React.FC = () => {
   return (
     <Container>
       <h1>Consulta-Placa</h1>
+
       <form
         onSubmit={(event) => {
           event.preventDefault();
@@ -56,6 +67,13 @@ const Home: React.FC = () => {
       </form>
 
       {carInfo && <CarInfo data={carInfo} />}
+      {!carInfo && (
+        <p>
+          Consulte a placa de qualquer veículo no Brasil de forma rápida, fácil
+          e sem propagandas. Funciona com placas antigas e também com as do
+          Mercosul.
+        </p>
+      )}
     </Container>
   );
 };

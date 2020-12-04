@@ -8,7 +8,7 @@
 
 # Consulta Placa
 
-Search any vehicle plate in Brazil, it's super easy, fast and there are no ads. It works with either new or old vehicle plates including with Mercosul plates.
+Search any license plate in Brazil, it's super easy, fast and there are no ads. It works with either new or older license plates including Mercosul license plates.
 
 Look up now: [Consulta-Placa](https://consulta-placa.vercel.app)
 

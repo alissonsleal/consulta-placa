@@ -11,6 +11,11 @@ export const Container = styled.div`
     font-weight: 400;
   }
 
+  p {
+    max-width: 15rem;
+    text-align: center;
+  }
+
   form {
     display: flex;
     justify-content: center;
