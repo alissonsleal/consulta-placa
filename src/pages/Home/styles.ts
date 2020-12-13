@@ -21,6 +21,9 @@ export const Container = styled.div`
     justify-content: center;
     flex-direction: column;
 
+    label {
+      display: none;
+    }
     input {
       background: var(--light-background);
       height: 3rem;

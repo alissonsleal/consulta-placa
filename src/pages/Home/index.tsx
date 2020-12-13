@@ -50,7 +50,7 @@ const Home: React.FC = () => {
           event.preventDefault();
         }}
       >
-        <label htmlFor="catPlate" />
+        <label htmlFor="car-plate">Insira a placa do carro</label>
         <input
           type="text"
           name="carPlate"
