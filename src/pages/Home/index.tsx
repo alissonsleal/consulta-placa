@@ -56,6 +56,7 @@ const Home: React.FC = () => {
           name="carPlate"
           onChange={(event) => setCarPlate(event.target.value)}
           value={carPlate}
+          id="car-plate"
           placeholder="Insira a placa do carro"
           pattern="^[a-zA-Z]{3}[0-9][A-Za-z0-9][0-9]{2}$"
           data-valid-example="ABC1234"
