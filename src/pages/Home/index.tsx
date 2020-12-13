@@ -50,11 +50,13 @@ const Home: React.FC = () => {
           event.preventDefault();
         }}
       >
+        <label htmlFor="car-plate">Insira a placa do carro</label>
         <input
           type="text"
           name="carPlate"
           onChange={(event) => setCarPlate(event.target.value)}
           value={carPlate}
+          id="car-plate"
           placeholder="Insira a placa do carro"
           pattern="^[a-zA-Z]{3}[0-9][A-Za-z0-9][0-9]{2}$"
           data-valid-example="ABC1234"
