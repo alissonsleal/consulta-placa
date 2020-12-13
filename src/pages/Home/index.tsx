@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import ReactGA from 'react-ga';
-import { FiSearch } from 'react-icons/fi';
+import { FiSearch, FiCamera } from 'react-icons/fi';
 
 import api from '../../services/api';
 import CarInfo from '../../components/CarInfo';
@@ -26,6 +26,7 @@ const Home: React.FC = () => {
 
   const [carPlate, setCarPlate] = useState('');
   const [carInfo, setCarInfo] = useState<CarProps>();
+  const [source, setSource] = useState('');
 
   const handleSubmit = async () => {
     try {
@@ -38,6 +39,16 @@ const Home: React.FC = () => {
       });
     } catch (err) {
       console.warn(err);
+    }
+  };
+
+  const handleCapture = (target: any) => {
+    if (target.files) {
+      if (target.files.length !== 0) {
+        const file = target.files[0];
+        const newUrl = URL.createObjectURL(file);
+        setSource(newUrl);
+      }
     }
   };
 
@@ -74,6 +85,17 @@ const Home: React.FC = () => {
           Mercosul.
         </p>
       )}
+      <input
+        accept="image/*"
+        id="icon-button-file"
+        type="file"
+        capture="environment"
+        onChange={(e) => handleCapture(e.target)}
+      />
+      <label htmlFor="icon-button-file">
+        <FiCamera fontSize="large" color="primary" />
+      </label>
+      {source && <img src={source} />}
     </Container>
   );
 };

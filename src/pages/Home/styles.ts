@@ -54,4 +54,14 @@ export const Container = styled.div`
       }
     }
   }
+  input[type='file'] {
+    display: none;
+  }
+
+  label {
+    svg {
+      height: 30px;
+      width: 30px;
+    }
+  }
 `;
