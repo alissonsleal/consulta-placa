@@ -1909,6 +1909,31 @@
     "@types/testing-library__dom" "*"
     pretty-format "^25.1.0"
 
+"@types/workbox-core@*":
+  version "4.3.0"
+  resolved "https://registry.yarnpkg.com/@types/workbox-core/-/workbox-core-4.3.0.tgz#c2f2a2caad4785f6ccdbef539477d49de6cc9160"
+  integrity sha512-0Tn2bbwYu+Exsp4L3lBA2voRi/7m+6qjgGIs4Lw3Hdm8+7caxAVRra6imkd9Wl3DmK0tKPHinKuo+ElXuqUvlg==
+
+"@types/workbox-precaching@^4.3.0":
+  version "4.3.0"
+  resolved "https://registry.yarnpkg.com/@types/workbox-precaching/-/workbox-precaching-4.3.0.tgz#c04b5b6c9f77690b0b58cf87c6f8ef632661f8e1"
+  integrity sha512-nnnFemK7X6kfJi7u3cZ2qkHCsWFJn+AUtBgBb8UJB7VxongJsBK/QTVbmMGhvIXBb/xkRpoa52VI2rtZLoB3hA==
+  dependencies:
+    "@types/workbox-core" "*"
+
+"@types/workbox-routing@*":
+  version "4.3.0"
+  resolved "https://registry.yarnpkg.com/@types/workbox-routing/-/workbox-routing-4.3.0.tgz#617e00b18806630cffff550b3d2ab09866f89411"
+  integrity sha512-op5P/f6n+9g5X4a+sYONp9EALnNxpoU3oXuB/BjeQv9d+k0bNE4LYSF06K6tXYL4PeCIZVJOi4yMCUCOi2NaqQ==
+
+"@types/workbox-strategies@^4.3.0":
+  version "4.3.0"
+  resolved "https://registry.yarnpkg.com/@types/workbox-strategies/-/workbox-strategies-4.3.0.tgz#5fde9a05db2874500221d3bb8d35c80dc998f41a"
+  integrity sha512-QTQQOZK2qNy24jXLt83SlqEmuEaQcubQ23515OFDBUpyVow2cYpxF2vzH3fEx7kIXQO/OS1UFNriTEitCHyxyA==
+  dependencies:
+    "@types/workbox-core" "*"
+    "@types/workbox-routing" "*"
+
 "@types/yargs-parser@*":
   version "15.0.0"
   resolved "https://registry.yarnpkg.com/@types/yargs-parser/-/yargs-parser-15.0.0.tgz#cb3f9f741869e20cce330ffbeb9271590483882d"
