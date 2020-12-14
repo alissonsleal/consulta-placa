@@ -21,6 +21,16 @@ export const Container = styled.div`
     justify-content: center;
     flex-direction: column;
 
+    label {
+      position: absolute;
+      overflow: hidden;
+      clip: rect(0 0 0 0);
+      height: 1px;
+      width: 1px;
+      margin: -1px;
+      padding: 0;
+      border: 0;
+    }
     input {
       background: var(--light-background);
       height: 3rem;
