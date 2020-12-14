@@ -6,6 +6,7 @@ import api from '../../services/api';
 import CarInfo from '../../components/CarInfo';
 
 import { Container } from './styles';
+import SearchByImage from '../../components/SearchByImage';
 
 interface CarProps {
   ano: string;
@@ -95,6 +96,7 @@ const Home: React.FC = () => {
       <label htmlFor="icon-button-file">
         <FiCamera fontSize="large" color="primary" />
       </label>
+      {source && <SearchByImage dataSource={source} />}
       {source && <img src={source} alt="Uploaded Source" />}
     </Container>
   );
