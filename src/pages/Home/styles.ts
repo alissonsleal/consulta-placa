@@ -72,6 +72,7 @@ export const Container = styled.div`
     svg {
       height: 30px;
       width: 30px;
+      cursor: pointer;
     }
   }
 

@@ -88,16 +88,20 @@ const Home: React.FC = () => {
           Mercosul.
         </p>
       )}
-      <input
-        accept="image/*"
-        id="icon-button-file"
-        type="file"
-        capture="environment"
-        onChange={(e) => handleCapture(e.target)}
-      />
-      <label htmlFor="icon-button-file">
-        <FiCamera fontSize="large" color="primary" />
-      </label>
+      {!source && (
+        <>
+          <input
+            accept="image/*"
+            id="icon-button-file"
+            type="file"
+            capture="environment"
+            onChange={(e) => handleCapture(e.target)}
+          />
+          <label htmlFor="icon-button-file">
+            <FiCamera fontSize="large" color="primary" />
+          </label>
+        </>
+      )}
       {source && <SearchByImage dataSource={source} />}
       {source && <img src={source} alt="Uploaded Source" />}
     </Container>
