@@ -11,15 +11,15 @@
 Consulte a placa de qualquer veículo no Brasil de forma rápida, fácil e sem propagandas.
 Funciona com placas antigas e também com as do Mercosul.
 
-Consulte agora: [Consulta-Placa](https://consulta-placa.vercel.app)
+Consulte agora: [placa.ga](https://placa.ga/)
 
 ## Imagens
 
 <p align="center">
 
-<img  width="300" src="https://i.imgur.com/3wjUFfn.png">
+<img  width="300" src=".github/screenshot_1.png">
 
-<img  width="300" src="https://i.imgur.com/eC2XBNp.png">
+<img  width="300" src=".github/screenshot_2.png">
 
 </p>
 
@@ -30,7 +30,7 @@ Consulte agora: [Consulta-Placa](https://consulta-placa.vercel.app)
 - [x] Axios
 - [x] Styled-Components
 - [x] APICarros.com
-- [x] Deployed to Vercel
+- [x] Deploy ma Vercel
 
 ## Contribuições
 

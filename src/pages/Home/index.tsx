@@ -64,7 +64,7 @@ const Home: React.FC = () => {
         />
         <button type="submit" onClick={handleSubmit}>
           <FiSearch size={14} />
-          Search
+          Procurar
         </button>
       </form>
 

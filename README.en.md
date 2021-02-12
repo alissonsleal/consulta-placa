@@ -10,15 +10,15 @@
 
 Search any license plate in Brazil, it's super easy, fast and there are no ads. It works with either new or older license plates including Mercosul license plates.
 
-Look up now: [Consulta-Placa](https://consulta-placa.vercel.app)
+Look up now: [placa.ga](https://placa.ga)
 
 ## Images
 
 <p align="center">
 
-<img  width="300" src="https://i.imgur.com/3wjUFfn.png">
+<img  width="300" src=".github/screenshot_1.png">
 
-<img  width="300" src="https://i.imgur.com/eC2XBNp.png">
+<img  width="300" src=".github/screenshot_2.png">
 
 </p>
 
